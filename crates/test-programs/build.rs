@@ -43,6 +43,8 @@ mod wasi_tests {
             .expect("generating wasi-cap-std-sync tests");
         test_directory(&mut out, "wasi-tokio", "tokio", &out_dir)
             .expect("generating wasi-tokio tests");
+        test_directory(&mut out, "wasi-virtfs", "virtfs", &out_dir)
+            .expect("generating wasi-virtfs tests");
     }
 
     fn build_tests(testsuite: &str, out_dir: &Path) -> io::Result<()> {

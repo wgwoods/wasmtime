@@ -1,5 +1,6 @@
 pub mod cap_std_sync;
 pub mod tokio;
+pub mod virtfs;
 
 // Configure the test suite environment.
 // Test programs use these environment variables to determine what behavior
